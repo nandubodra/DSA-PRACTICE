@@ -3,7 +3,7 @@ package PRACTICE01;
 import java.util.*;
 
 public class lonelyNum {
-    public ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
+    public static ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
           Collections.sort(nums);
         ArrayList<Integer> list = new ArrayList<>();
            for (int i=1; i < nums.size()-1; i++) {
@@ -33,6 +33,6 @@ public class lonelyNum {
     nums.add(6);
     nums.add(5);
     nums.add(8);
-    findLonely(nums);
+    System.out.println(findLonely(nums));
     }
 }
